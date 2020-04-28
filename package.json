@@ -1,6 +1,8 @@
 {
   "name": "eye-rest-timer-app",
   "version": "0.1.0",
+  "description": "Doctors recommend looking away 20 feet for 20 seconds every 20 minutes, hope this timer would be helpful for your eyes",
+  "author": "bivek",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
