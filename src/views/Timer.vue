@@ -67,7 +67,7 @@ export default {
       current_time: 1200,
       display_time: '20 min 0 secs',
       minutes: 1200, //20*60 minutes
-      seconds: 5,
+      seconds: 20, // look away for 20 seconds
       button_face: 'Start Timer',
       interval: null,
       timeout: null,
