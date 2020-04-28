@@ -5,7 +5,7 @@
       Doctors recommend looking away 20 feet for 20 seconds every 20 minutes.
     </p>
     <div class="look_away" v-if="look_away_from_keyboard">
-      Look away from keyboard
+      Look away from your screen
     </div>
     <div class="bar">
       <span>{{ display_time }}</span>
