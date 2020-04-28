@@ -24,7 +24,7 @@
       <input
         type="number"
         style="width:50px;"
-        min="1"
+        min="0"
         max="10"
         v-model="volume"
       />
@@ -74,7 +74,7 @@ export default {
       status: 'minutes',
       chime: chime,
       alarm: alarm,
-      volume: 5,
+      volume: 7,
       playing_sound: false,
       look_away_from_keyboard: false
     }
@@ -161,7 +161,13 @@ export default {
   watch: {
     // whenever this.volume changes, this function will run
     volume: function() {
-      Howler.volume(this.volume / 10)
+      let vol
+      if (this.volume > 0) {
+        vol = this.volume / 10
+      } else {
+        vol = 0
+      }
+      Howler.volume(vol)
     },
     minutes: function() {
       this.current_time = this.minutes

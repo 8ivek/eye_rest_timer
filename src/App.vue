@@ -19,7 +19,8 @@ button.start_timer {
   margin: 1em;
   font-size: 2em;
   border-radius: 0.3em;
-  background: linear-gradient(to right, #013013, #b3c5a8);
+  padding: 0 1em 0 1em;
+  background: linear-gradient(to right, #016326, #687461);
   color: white;
 }
 
@@ -28,8 +29,13 @@ button.stop_timer {
   margin: 1em;
   font-size: 2em;
   border-radius: 0.3em;
-  background: linear-gradient(to right, #4b0101, #f3dada);
+  padding: 0 1em 0 1em;
+  background: linear-gradient(to right, #360000, #ac7c7c);
   color: white;
+}
+
+button:focus {
+  outline: none;
 }
 
 input {
